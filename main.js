@@ -1,4 +1,5 @@
 const fs = require('fs'); // Require the filesystem module
+const readline = require('readline');
 
 const myHeaders = new Headers();
 myHeaders.append(
@@ -38,10 +39,63 @@ myHeaders.append(
 myHeaders.append('sec-ch-ua-mobile', '?0');
 myHeaders.append('sec-ch-ua-platform', '"Windows"');
 
+async function readAndPrintLines(fileName) {
+  const fileStream = fs.createReadStream(fileName);
+
+  const rl = readline.createInterface({
+    input: fileStream,
+    crlfDelay: Infinity, // Handles CR+LF combinations in files correctly
+  });
+
+  rl.on('line', (line) => {
+    const urlencoded = new URLSearchParams();
+    urlencoded.append('rpt_type', 'current');
+    urlencoded.append('p_selProvState', 'ALL');
+    urlencoded.append('p_selInstitution', line); // Assigning institution code
+    urlencoded.append('p_selSubject', 'STAT');
+
+    const requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: urlencoded,
+      redirect: 'follow',
+      timeout: 8000,
+    };
+
+    makeRequestToServer(requestOptions, 'STAT 2000');
+  });
+
+  rl.on('close', () => {
+    console.log('Finished reading the file.');
+  });
+
+  rl.on('error', (error) => {
+    console.error(`Error reading the file: ${error.message}`);
+  });
+}
+
+// Usage: Pass the filename you want to read
+// readAndPrintLines('universityCodes.txt');
+
+async function makeRequestToServer(requestOptions, courseName) {
+  fetch(
+    'https://aurora.umanitoba.ca/ssb/ksstransequiv.p_trans_eq_main',
+    requestOptions
+  )
+    .then((response) => response.text())
+    .then((result) => {
+      if (result.includes(courseName))
+        console.log(requestOptions.body.get('p_selInstitution'))
+      else 
+        console.log('No');
+    })
+    .catch((error) => console.error(error));
+}
+
 const urlencoded = new URLSearchParams();
 urlencoded.append('rpt_type', 'current');
 urlencoded.append('p_selProvState', 'ALL');
-urlencoded.append('p_selInstitution', 'CMB022');
+urlencoded.append('p_selInstitution', 'CMB022'); // Assigning institution code
 urlencoded.append('p_selSubject', 'STAT');
 
 const requestOptions = {
@@ -51,22 +105,4 @@ const requestOptions = {
   redirect: 'follow',
 };
 
-async function makeRequestToServer() {
-    fetch(
-      'https://aurora.umanitoba.ca/ssb/ksstransequiv.p_trans_eq_main',
-      requestOptions
-    )
-      .then((response) => response.text())
-      .then((result) => {
-        fs.writeFile('output.html', result, (err) => {
-          if (err) {
-            console.error('Error writing to file', err);
-          } else {
-            console.log('Successfully wrote to output.html');
-          }
-        });
-      })
-      .catch((error) => console.error(error));
-}
-
-makeRequestToServer()
+makeRequestToServer(requestOptions, 'STAT 2000');
