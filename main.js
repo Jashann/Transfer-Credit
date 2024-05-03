@@ -1,3 +1,5 @@
+const fs = require('fs'); // Require the filesystem module
+
 const myHeaders = new Headers();
 myHeaders.append(
   'Accept',
@@ -39,6 +41,8 @@ myHeaders.append('sec-ch-ua-platform', '"Windows"');
 const urlencoded = new URLSearchParams();
 urlencoded.append('rpt_type', 'current');
 urlencoded.append('p_selProvState', 'ALL');
+urlencoded.append('p_selInstitution', 'CMB022');
+urlencoded.append('p_selSubject', 'STAT');
 
 const requestOptions = {
   method: 'POST',
@@ -47,10 +51,22 @@ const requestOptions = {
   redirect: 'follow',
 };
 
-fetch(
-  'https://aurora.umanitoba.ca/ssb/ksstransequiv.p_trans_eq_main',
-  requestOptions
-)
-  .then((response) => response.text())
-  .then((result) => console.log(result))
-  .catch((error) => console.error(error));
+async function makeRequestToServer() {
+    fetch(
+      'https://aurora.umanitoba.ca/ssb/ksstransequiv.p_trans_eq_main',
+      requestOptions
+    )
+      .then((response) => response.text())
+      .then((result) => {
+        fs.writeFile('output.html', result, (err) => {
+          if (err) {
+            console.error('Error writing to file', err);
+          } else {
+            console.log('Successfully wrote to output.html');
+          }
+        });
+      })
+      .catch((error) => console.error(error));
+}
+
+makeRequestToServer()
