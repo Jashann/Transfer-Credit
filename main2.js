@@ -84,12 +84,12 @@ async function readAndPrintLines(fileName) {
   });
 
   for await (const line of rl) {
-    await sendRequestWithRandomUserAgent(line, 'STAT', 'STAT 1000');
+    await sendRequestWithRandomUserAgent(line, 'STAT', 'STAT 2000');
   }
 
   console.log('Finished reading the file.');
   rl.close();
 }
 
-readAndPrintLines('universityCodesSmall.txt');
+readAndPrintLines('universityCodes.txt');
 // sendRequestWithRandomUserAgent('CMB022', 'STAT', 'STAT 1000');
