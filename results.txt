@@ -1,0 +1,10 @@
+ STAT 1000 - CMB022 - YES - Advanced Placement
+ STAT 2000 - NG0021 - YES - Babcock University
+ STAT 2000 - UNJ018 - YES - Bergen Community College
+ STAT 2000 - CMB001 - YES - Brandon University
+ STAT 2000 - CN0074 - YES - Hunan University
+ STAT 2000 - CON004 - YES - Lakehead University
+ STAT 2000 - CBC023 - YES - Langara College
+ STAT 2000 - CNS005 - YES - Mount Saint Vincent University
+ STAT 2000 - CMB006 - YES - RRC Polytech
+ STAT 2000 - CON010 - YES - Trent University

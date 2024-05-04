@@ -3,6 +3,21 @@ const { randomInt } = require('crypto');
 const fs = require('fs'); // Require the filesystem module
 const readline = require('readline');
 
+
+// HELPER METHOD
+function extractUniversityOfferingName(htmlString) {
+  // A basic regular expression to find the content of the first <th> tag in a specific way
+  const regex = /<th[^>]*>\s*<p[^>]*>\s*([^<]+)\s*<\/p>\s*<\/th>/i;
+  const match = htmlString.match(regex);
+
+  if (match && match[1]) {
+    return match[1].trim();
+  } else {
+    return 'No <th> element found.';
+  }
+}
+
+
 function getRandomUserAgent() {
   const userAgents = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
@@ -33,7 +48,12 @@ function makeRequestToServer(data, courseName) {
       });
       res.on('end', () => {
         const output = result.includes(courseName) ? 'YES' : 'NO';
-        const message = ` ${courseName} - ${data.get('p_selInstitution')} - ${output}  \n`;
+        let message = ` ${courseName} - ${data.get('p_selInstitution')} - ${output}`;
+        
+        if (output)
+          message += " - " +extractUniversityOfferingName(result);
+
+        message += '\n';
 
         fs.appendFile('results.txt', message, (err) => {
           if (err) {
@@ -76,7 +96,7 @@ async function sendRequestWithRandomUserAgent(
   await makeRequestToServer(urlencoded, courseCode);
 }
 
-async function readAndPrintLines(fileName) {
+async function readAndPrintLines(fileName, department="STAT", courseCode="STAT 2000") {
   const fileStream = fs.createReadStream(fileName);
   const rl = readline.createInterface({
     input: fileStream,
@@ -91,5 +111,5 @@ async function readAndPrintLines(fileName) {
   rl.close();
 }
 
-readAndPrintLines('universityCodes.txt');
+readAndPrintLines('universityCodesSmall.txt', 'STAT', 'STAT 2000');
 // sendRequestWithRandomUserAgent('CMB022', 'STAT', 'STAT 1000');
