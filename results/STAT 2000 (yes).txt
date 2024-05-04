@@ -1,17 +1,32 @@
-STAT 2000 - NG0021 - YES - Nigeria
-STAT 2000 - UNJ018 - YES - US
-STAT 2000 - CMB001 - YES - Brandon, MB
-STAT 2000 - CN0074 - YES - China
-STAT 2000 - CON004 - YES - Lakehead, ON
-STAT 2000 - CBC023 - YES - Langara, BC
-STAT 2000 - CNS005 - YES - Mount Saint, NS
-STAT 2000 - CMB006 - YES - RRC, MB
-STAT 2000 - CON010 - YES - Trent, ON
-STAT 2000 - CBC001 - YES - UBC, BC
-STAT 2000 - EN0228 - YES - UK
-STAT 2000 - CNB002 - YES - 
-STAT 2000 - CSK001 - YES - 
-STAT 2000 - UFL022 - YES - 
-STAT 2000 - CON009 - YES - 
-STAT 2000 - CMB005 - YES - 
-STAT 2000 - CBC016 - YES - 
+ STAT 1000 - CMB022 - YES - Advanced Placement
+ STAT 2000 - NG0021 - YES - Babcock University
+ STAT 2000 - UNJ018 - YES - Bergen Community College
+ STAT 2000 - CMB001 - YES - Brandon University, MB
+ STAT 2000 - CN0074 - YES - Hunan University
+ STAT 2000 - CON004 - YES - Lakehead University, ON
+ STAT 2000 - CBC023 - YES - Langara College, BC
+ STAT 2000 - CNS005 - YES - Mount Saint Vincent University, NS
+ STAT 2000 - CMB006 - YES - RRC Polytech, MB
+ STAT 2000 - CON010 - YES - Trent University, ON
+ STAT 2000 - CBC001 - YES - University of British Columbia, BC
+ STAT 2000 - EN0228 - YES - University of Lincoln
+ STAT 2000 - CNB002 - YES - University of New Brunswick, NB
+ STAT 2000 - CSK001 - YES - University of Saskatchewan, SK
+ STAT 2000 - UFL022 - YES - University of South Florida
+ STAT 2000 - CON009 - YES - University of Toronto, ON
+ STAT 2000 - CMB005 - YES - University of Winnipeg, MB
+ STAT 2000 - CBC016 - YES - University of the Fraser Vall, BC
+
+
+Brandon University, MB
+Lakehead University, ON
+Langara College, BC
+Mount Saint Vincent University, NS
+RRC Polytech, MB
+Trent University, ON
+University of British Columbia, BC
+University of New Brunswick, NB
+University of Saskatchewan, SK
+University of Toronto, ON
+University of Winnipeg, MB
+University of the Fraser Vall, BC

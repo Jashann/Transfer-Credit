@@ -8,3 +8,11 @@
  STAT 2000 - CNS005 - YES - Mount Saint Vincent University
  STAT 2000 - CMB006 - YES - RRC Polytech
  STAT 2000 - CON010 - YES - Trent University
+ STAT 2000 - CBC001 - YES - University of British Columbia
+ STAT 2000 - EN0228 - YES - University of Lincoln
+ STAT 2000 - CNB002 - YES - University of New Brunswick
+ STAT 2000 - CSK001 - YES - University of Saskatchewan
+ STAT 2000 - UFL022 - YES - University of South Florida
+ STAT 2000 - CON009 - YES - University of Toronto
+ STAT 2000 - CMB005 - YES - University of Winnipeg
+ STAT 2000 - CBC016 - YES - University of the Fraser Vall
