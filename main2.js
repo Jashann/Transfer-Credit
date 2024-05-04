@@ -32,12 +32,21 @@ function makeRequestToServer(data, courseName) {
         result += chunk;
       });
       res.on('end', () => {
-        if (result.includes(courseName)) {
-          console.log('YES', data.get('p_selInstitution'));
-        } else {
-          console.log('NO', data.get('p_selInstitution'));
-        }
-        resolve();
+        const output = result.includes(courseName) ? 'YES' : 'NO';
+        const message = ` ${courseName} - ${data.get('p_selInstitution')} - ${output}  \n`;
+
+        fs.appendFile('results.txt', message, (err) => {
+          if (err) {
+            console.error('Error writing to file:', err);
+            reject(err);
+          } else {
+            console.log(
+              'Result appended to file for',
+              data.get('p_selInstitution')
+            );
+            resolve();
+          }
+        });
       });
     });
 
@@ -56,7 +65,7 @@ async function sendRequestWithRandomUserAgent(
   department,
   courseCode
 ) {
-  console.log(`REQUEST for [${universityCode}]`);
+  console.log(`REQUEST for [${courseCode} - ${universityCode}]`);
 
   const urlencoded = new URLSearchParams();
   urlencoded.append('rpt_type', 'current');
@@ -82,5 +91,5 @@ async function readAndPrintLines(fileName) {
   rl.close();
 }
 
-readAndPrintLines('universityCodes.txt');
+readAndPrintLines('universityCodesSmall.txt');
 // sendRequestWithRandomUserAgent('CMB022', 'STAT', 'STAT 1000');
