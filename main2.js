@@ -1,5 +1,7 @@
 const https = require('https');
 const { randomInt } = require('crypto');
+const fs = require('fs'); // Require the filesystem module
+const readline = require('readline');
 
 function getRandomUserAgent() {
   const userAgents = [
@@ -13,50 +15,72 @@ function getRandomUserAgent() {
 }
 
 function makeRequestToServer(data, courseName) {
-  const options = {
-    hostname: 'aurora.umanitoba.ca',
-    path: '/ssb/ksstransequiv.p_trans_eq_main',
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-      'User-Agent': getRandomUserAgent(),
-    },
-  };
+  return new Promise((resolve, reject) => {
+    const options = {
+      hostname: 'aurora.umanitoba.ca',
+      path: '/ssb/ksstransequiv.p_trans_eq_main',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': getRandomUserAgent(),
+      },
+    };
 
-  const req = https.request(options, (res) => {
-    let result = '';
-    res.on('data', (chunk) => {
-      result += chunk;
+    const req = https.request(options, (res) => {
+      let result = '';
+      res.on('data', (chunk) => {
+        result += chunk;
+      });
+      res.on('end', () => {
+        if (result.includes(courseName)) {
+          console.log('YES', data.get('p_selInstitution'));
+        } else {
+          console.log('NO', data.get('p_selInstitution'));
+        }
+        resolve();
+      });
     });
-    res.on('end', () => {
-      if (result.includes(courseName)) {
-        console.log(data.get('p_selInstitution'));
-      } else {
-        console.log('No');
-      }
+
+    req.on('error', (error) => {
+      console.error(error);
+      reject(error);
     });
-  });
 
-  req.on('error', (error) => {
-    console.error(error);
+    req.write(data.toString());
+    req.end();
   });
-
-  req.write(data.toString());
-  req.end();
 }
 
-function sendRequestWithRandomUserAgent() {
+async function sendRequestWithRandomUserAgent(
+  universityCode,
+  department,
+  courseCode
+) {
+  console.log(`REQUEST for [${universityCode}]`);
+
   const urlencoded = new URLSearchParams();
   urlencoded.append('rpt_type', 'current');
   urlencoded.append('p_selProvState', 'ALL');
-  urlencoded.append('p_selInstitution', 'CMB022');
-  urlencoded.append('p_selSubject', 'STAT');
+  urlencoded.append('p_selInstitution', universityCode);
+  urlencoded.append('p_selSubject', department);
 
-  makeRequestToServer(urlencoded, 'STAT 1000');
-
-  // Optionally introduce random delay
-  const delay = randomInt(1000, 5000); // Delay between 1000 to 5000 milliseconds
-  setTimeout(sendRequestWithRandomUserAgent, delay);
+  await makeRequestToServer(urlencoded, courseCode);
 }
 
-sendRequestWithRandomUserAgent();
+async function readAndPrintLines(fileName) {
+  const fileStream = fs.createReadStream(fileName);
+  const rl = readline.createInterface({
+    input: fileStream,
+    crlfDelay: Infinity,
+  });
+
+  for await (const line of rl) {
+    await sendRequestWithRandomUserAgent(line, 'STAT', 'STAT 1000');
+  }
+
+  console.log('Finished reading the file.');
+  rl.close();
+}
+
+readAndPrintLines('universityCodes.txt');
+// sendRequestWithRandomUserAgent('CMB022', 'STAT', 'STAT 1000');
