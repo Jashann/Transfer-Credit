@@ -16,3 +16,8 @@
  STAT 2000 - CON009 - YES - University of Toronto
  STAT 2000 - CMB005 - YES - University of Winnipeg
  STAT 2000 - CBC016 - YES - University of the Fraser Vall
+ STAT 2000 - CMB005 - YES - University of Winnipeg
+ COMP 1010 - CMB005 - YES - University of Winnipeg
+ COMP 1010 - NG0021 - NO - Babcock University
+ COMP 1010 - UNJ018 - NO - Bergen Community College
+ COMP 1010 - CMB001 - NO - Brandon University
