@@ -69,10 +69,10 @@ function makeRequestToServer(data, courseName) {
         });
       });
     });
-
     req.on('error', (error) => {
-      console.error(error);
-      reject(error);
+      console.log('Error with request:', error.message);
+      console.log('Retrying in 5 seconds...');
+      setTimeout(makeRequestToServer, 5000, data, courseName);
     });
 
     req.write(data.toString());
@@ -111,5 +111,5 @@ async function readAndPrintLines(fileName, department="STAT", courseCode="STAT 2
   rl.close();
 }
 
-readAndPrintLines('universityCodes.txt', 'COMP', 'COMP 1010');
-// sendRequestWithRandomUserAgent('CMB022', 'STAT', 'STAT 1000');
+// readAndPrintLines('universityCodes.txt', 'COMP', 'COMP 2280');
+sendRequestWithRandomUserAgent('CMB022', 'STAT', 'STAT 1000');

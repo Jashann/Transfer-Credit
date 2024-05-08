@@ -21,3 +21,320 @@
  COMP 1010 - NG0021 - NO - Babcock University
  COMP 1010 - UNJ018 - NO - Bergen Community College
  COMP 1010 - CMB001 - NO - Brandon University
+ COMP 2280 - CMB022 - NO - Advanced Placement
+ COMP 2280 - CMB023 - NO - International Baccalaureate
+ COMP 2280 - PL0162 - NO - AGH University of Krakow
+ COMP 2280 - DK0004 - NO - Aarhus University
+ COMP 2280 - CNS001 - NO - Acadia University
+ COMP 2280 - NG0176 - NO - Achievers University
+ COMP 2280 - PL0003 - NO - Adam Mickiewicz University
+ COMP 2280 - NG0150 - NO - Adeleke University
+ COMP 2280 - BD0090 - NO - Aeronautical Inst Bangladesh
+ COMP 2280 - NG0118 - NO - Afe Babalola Uni Ado-Ekiti
+ COMP 2280 - EG0001 - NO - Ain Shams University
+ COMP 2280 - JP0045 - NO - Akita International University
+ COMP 2280 - CAB023 - NO - Alberta University of the Arts
+ COMP 2280 - IR0196 - NO - Alborz Uni of Medical Sciences
+ COMP 2280 - CBC057 - NO - Alexander College
+ COMP 2280 - EG0008 - NO - Alexandria University
+ COMP 2280 - SA0030 - NO - Alfaisal University
+ COMP 2280 - CON021 - NO - Algoma University
+ COMP 2280 - CON022 - NO - Algonquin College
+ COMP 2280 - UPA072 - NO - Alvernia University
+ COMP 2280 - CAB033 - NO - Ambrose University
+ COMP 2280 - IE0020 - NO - American College Dublin
+ COMP 2280 - BD0009 - NO - American International Univ
+ COMP 2280 - GM0002 - NO - American International University
+ COMP 2280 - UCA042 - NO - American Jewish University
+ COMP 2280 - UWV013 - NO - American Public University
+ COMP 2280 - UCA002 - NO - American River College
+ COMP 2280 - BG0004 - NO - American University
+ COMP 2280 - EG0002 - NO - American University in Cairo
+ COMP 2280 - AE0004 - NO - American University in Dubai
+ COMP 2280 - KW0002 - NO - American University of Kuwait
+ COMP 2280 - AE0011 - NO - American University of Sharjah
+ COMP 2280 - UMI001 - NO - Andrews University
+ COMP 2280 - EN0277 - NO - Anglia Ruskin University
+ COMP 2280 - UMN034 - NO - Anoka-Ramsey Comm College
+ COMP 2280 - CN0607 - NO - Anqing Medical & Pharm College
+ COMP 2280 - AG0002 - NO - Antigua State College
+ COMP 2280 - EG0004 - NO - Arab Academy For Sc & Tech
+ COMP 2280 - IR0055 - NO - Arak University
+ COMP 2280 - FI0101 - NO - Arcada Uni of Applied Science
+ COMP 2280 - SE0099 - NO - Arendus/Gotland Folkhogskolen
+ COMP 2280 - UAZ001 - NO - Arizona State University
+ COMP 2280 - UAR001 - NO - Arkansas State University
+ COMP 2280 - UGA039 - NO - Ashworth College
+ COMP 2280 - MY0113 - NO - Asia Pacific Uni Tech & Innov
+ COMP 2280 - CMB007 - NO - Assiniboine Community College
+ COMP 2280 - PH0042 - NO - Ateneo de Davao University
+ COMP 2280 - CAB005 - NO - Athabasca University
+ COMP 2280 - UTX037 - NO - Austin Community College
+ COMP 2280 - AU0046 - NO - Australian Catholic University
+ COMP 2280 - AZ0004 - NO - Azerbaijan State Economic Univ
+ COMP 2280 - IN0548 - NO - B M S College of Engineering
+ COMP 2280 - CBC008 - NO - Bcit
+ COMP 2280 - BD0019 - NO - BRAC University
+ COMP 2280 - IN0055 - NO - Baba Farid Univ of Health Sc
+ COMP 2280 - NG0021 - NO - Babcock University
+ COMP 2280 - PK0007 - NO - Bahauddin Zakariya Univ Multan
+ COMP 2280 - TR0024 - NO - Bahcesehir University
+ COMP 2280 - PK0015 - NO - Bahria University
+ COMP 2280 - CBC032 - NO - Bamfield Marine Science Centre
+ COMP 2280 - BD0042 - NO - Bangladesh Univ of Professiona
+ COMP 2280 - IL0013 - NO - Bar Ilan University
+ COMP 2280 - BB0001 - NO - Barbados Community College
+ COMP 2280 - UKS027 - NO - Barton Community College
+ COMP 2280 - CN0504 - NO - Beijing Inst of Fashion Tech
+ COMP 2280 - CN0324 - NO - Beijing Int'l Studies Univ
+ COMP 2280 - CN0464 - NO - Beijing Lang & Culture Univ
+ COMP 2280 - CN0259 - NO - Beijing Tech & Business Univ
+ COMP 2280 - CN0163 - NO - Beijing Univ of Chemical Tech
+ COMP 2280 - CN0414 - NO - Beijing University Chinese Med
+ COMP 2280 - CN0496 - NO - Beijing Wuzi University
+ COMP 2280 - UWA016 - NO - Bellevue Community College
+ COMP 2280 - CMB022 - NO - Advanced Placement
+ COMP 2280 - CMB023 - NO - International Baccalaureate
+ COMP 2280 - PL0162 - NO - AGH University of Krakow
+ COMP 2280 - DK0004 - NO - Aarhus University
+ COMP 2280 - CNS001 - NO - Acadia University
+ COMP 2280 - NG0176 - NO - Achievers University
+ COMP 2280 - PL0003 - NO - Adam Mickiewicz University
+ COMP 2280 - NG0150 - NO - Adeleke University
+ COMP 2280 - BD0090 - NO - Aeronautical Inst Bangladesh
+ COMP 2280 - NG0118 - NO - Afe Babalola Uni Ado-Ekiti
+ COMP 2280 - EG0001 - NO - Ain Shams University
+ COMP 2280 - JP0045 - NO - Akita International University
+ COMP 2280 - CAB023 - NO - Alberta University of the Arts
+ COMP 2280 - IR0196 - NO - Alborz Uni of Medical Sciences
+ COMP 2280 - CBC057 - NO - Alexander College
+ COMP 2280 - EG0008 - NO - Alexandria University
+ COMP 2280 - SA0030 - NO - Alfaisal University
+ COMP 2280 - CON021 - NO - Algoma University
+ COMP 2280 - CON022 - NO - Algonquin College
+ COMP 2280 - UPA072 - NO - Alvernia University
+ COMP 2280 - CAB033 - NO - Ambrose University
+ COMP 2280 - IE0020 - NO - American College Dublin
+ COMP 2280 - BD0009 - NO - American International Univ
+ COMP 2280 - GM0002 - NO - American International University
+ COMP 2280 - UCA042 - NO - American Jewish University
+ COMP 2280 - UWV013 - NO - American Public University
+ COMP 2280 - UCA002 - NO - American River College
+ COMP 2280 - BG0004 - NO - American University
+ COMP 2280 - EG0002 - NO - American University in Cairo
+ COMP 2280 - AE0004 - NO - American University in Dubai
+ COMP 2280 - KW0002 - NO - American University of Kuwait
+ COMP 2280 - AE0011 - NO - American University of Sharjah
+ COMP 2280 - UMI001 - NO - Andrews University
+ COMP 2280 - EN0277 - NO - Anglia Ruskin University
+ COMP 2280 - UMN034 - NO - Anoka-Ramsey Comm College
+ COMP 2280 - CN0607 - NO - Anqing Medical & Pharm College
+ COMP 2280 - AG0002 - NO - Antigua State College
+ COMP 2280 - EG0004 - NO - Arab Academy For Sc & Tech
+ COMP 2280 - IR0055 - NO - Arak University
+ COMP 2280 - FI0101 - NO - Arcada Uni of Applied Science
+ COMP 2280 - SE0099 - NO - Arendus/Gotland Folkhogskolen
+ COMP 2280 - UAZ001 - NO - Arizona State University
+ COMP 2280 - UAR001 - NO - Arkansas State University
+ COMP 2280 - UGA039 - NO - Ashworth College
+ COMP 2280 - MY0113 - NO - Asia Pacific Uni Tech & Innov
+ COMP 2280 - CMB007 - NO - Assiniboine Community College
+ COMP 2280 - PH0042 - NO - Ateneo de Davao University
+ COMP 2280 - CAB005 - NO - Athabasca University
+ COMP 2280 - UTX037 - NO - Austin Community College
+ COMP 2280 - AU0046 - NO - Australian Catholic University
+ COMP 2280 - AZ0004 - NO - Azerbaijan State Economic Univ
+ COMP 2280 - IN0548 - NO - B M S College of Engineering
+ COMP 2280 - CBC008 - NO - Bcit
+ COMP 2280 - BD0019 - NO - BRAC University
+ COMP 2280 - IN0055 - NO - Baba Farid Univ of Health Sc
+ COMP 2280 - NG0021 - NO - Babcock University
+ COMP 2280 - PK0007 - NO - Bahauddin Zakariya Univ Multan
+ COMP 2280 - TR0024 - NO - Bahcesehir University
+ COMP 2280 - PK0015 - NO - Bahria University
+ COMP 2280 - CBC032 - NO - Bamfield Marine Science Centre
+ COMP 2280 - BD0042 - NO - Bangladesh Univ of Professiona
+ COMP 2280 - IL0013 - NO - Bar Ilan University
+ COMP 2280 - BB0001 - NO - Barbados Community College
+ COMP 2280 - UKS027 - NO - Barton Community College
+ COMP 2280 - CN0504 - NO - Beijing Inst of Fashion Tech
+ COMP 2280 - CN0324 - NO - Beijing Int'l Studies Univ
+ COMP 2280 - CN0464 - NO - Beijing Lang & Culture Univ
+ COMP 2280 - CN0259 - NO - Beijing Tech & Business Univ
+ COMP 2280 - CN0163 - NO - Beijing Univ of Chemical Tech
+ COMP 2280 - CN0414 - NO - Beijing University Chinese Med
+ COMP 2280 - CN0496 - NO - Beijing Wuzi University
+ COMP 2280 - UWA016 - NO - Bellevue Community College
+ COMP 2280 - UMN001 - NO - Bemidji State University
+ COMP 2280 - PH0178 - NO - Benguet State University
+ COMP 2280 - UNJ018 - NO - Bergen Community College
+ COMP 2280 - UMA043 - NO - Berklee College of Music
+ COMP 2280 - UMN084 - NO - Bethany Lutheran College
+ COMP 2280 - UMN058 - NO - Bethel University (MN)
+ COMP 2280 - JM0018 - NO - Bethlehem Moravian College
+ COMP 2280 - IS0004 - NO - Bifrost University
+ COMP 2280 - IN0005 - NO - Birla Inst of Tech & Sc (BITS)
+ COMP 2280 - CQC001 - NO - Bishop's University
+ COMP 2280 - UND001 - NO - Bismarck State College
+ COMP 2280 - TR0016 - NO - Bogazici University
+ COMP 2280 - CMB020 - NO - Booth University College
+ COMP 2280 - CON062 - NO - Boreal College
+ COMP 2280 - UNY090 - NO - Borough of Manhattan CC - CUNY
+ COMP 2280 - UMA003 - NO - Boston College
+ COMP 2280 - UMA005 - NO - Boston University
+ COMP 2280 - CAB028 - NO - Bow Valley College
+ COMP 2280 - NG0066 - NO - Bowen University
+ COMP 2280 - UOH001 - NO - Bowling Green State University
+ COMP 2280 - CMB001 - NO - Brandon University
+ COMP 2280 - CSK008 - NO - Briercrest College
+ COMP 2280 - UHI011 - NO - Brigham Young Univer Hawaii
+ COMP 2280 - UID009 - NO - Brigham Young University
+ COMP 2280 - UUT001 - NO - Brigham Young University
+ COMP 2280 - UVA029 - NO - Brightpoint Community College
+ COMP 2280 - EG0100 - NO - British University in Egypt
+ COMP 2280 - CON001 - NO - Brock University
+ COMP 2280 - UNY066 - NO - Bronx Community College
+ COMP 2280 - UFL001 - NO - Broward College
+ COMP 2280 - CAB020 - NO - Burman University
+ COMP 2280 - CR0099 - NO - Costaat
+ COMP 2280 - UCA115 - NO - California Polytechnic State
+ COMP 2280 - UCA141 - NO - California State U - Monterey
+ COMP 2280 - UCA110 - NO - California State U Bakersfield
+ COMP 2280 - UCA006 - NO - California State University
+ COMP 2280 - UMI015 - NO - Calvin College
+ COMP 2280 - CON024 - NO - Cambrian College
+ COMP 2280 - UNJ002 - NO - Camden County College
+ COMP 2280 - UOK014 - NO - Cameron University
+ COMP 2280 - CBC009 - NO - Camosun College
+ COMP 2280 - UKY011 - NO - Campbellsville University
+ COMP 2280 - CMB026 - NO - Canadian Mennonite University
+ COMP 2280 - CAB042 - NO - Canadian Southern Baptist Coll
+ COMP 2280 - AE0100 - NO - Canadian University Dubai
+ COMP 2280 - CON025 - NO - Canadore College
+ COMP 2280 - CNS012 - NO - Cape Breton University
+ COMP 2280 - CBC010 - NO - Capilano University
+ COMP 2280 - CN0486 - NO - Capital Medical University
+ COMP 2280 - WL0010 - NO - Cardiff Metropolitan Univ
+ COMP 2280 - WL0005 - NO - Cardiff University
+ COMP 2280 - CON002 - NO - Carleton University
+ COMP 2280 - UPA002 - NO - Carnegie Mellon University
+ COMP 2280 - CM0016 - NO - Catholic Uni Inst of Buea
+ COMP 2280 - UOH039 - NO - Cedarville University
+ COMP 2280 - CON026 - NO - Centennial College
+ COMP 2280 - UNE010 - NO - Central Community College
+ COMP 2280 - UCT020 - NO - Central Connecticut State Un
+ COMP 2280 - UMN049 - NO - Central Lakes College
+ COMP 2280 - UMI002 - NO - Central Michigan University
+ COMP 2280 - PH0010 - NO - Centro Escolar University
+ COMP 2280 - BR0105 - NO - Centro Uni Mauricio de Nassau
+ COMP 2280 - BR0061 - NO - Centro Universitario Brasilia
+ COMP 2280 - UMN037 - NO - Century College
+ COMP 2280 - CN0365 - NO - Changchun Inst of Technolog
+ COMP 2280 - CN0549 - NO - Changchun Normal University
+ COMP 2280 - CN0683 - NO - Changzhou Inst of Technology
+ COMP 2280 - CN0500 - NO - Changzhou University
+ COMP 2280 - AU0036 - NO - Charles Sturt University
+ COMP 2280 - CN0436 - NO - Chengdu Univ of Technology
+ COMP 2280 - TW0054 - NO - China Medical University
+ COMP 2280 - CN0156 - NO - China Three Gorges University
+ COMP 2280 - CN0262 - NO - China Univ Political Sci & Law
+ COMP 2280 - CN0079 - NO - China Univ of Mining & Tech
+ COMP 2280 - TW0053 - NO - China University of Technology
+ COMP 2280 - IN0529 - NO - Chitkara University
+ COMP 2280 - BD0075 - NO - Chittagong Indpendent Univ.
+ COMP 2280 - CN0692 - NO - Chongqing Nanfang Trans Coll
+ COMP 2280 - CN0539 - NO - Chongqing Univ Posts & Telecom
+ COMP 2280 - KR0018 - NO - Chung-Ang University
+ COMP 2280 - KR0016 - NO - Chungbuk National University
+ COMP 2280 - KR0067 - NO - Chungnam National Univ
+ COMP 2280 - JM0001 - NO - Church Teachers College
+ COMP 2280 - UCA177 - NO - Citrus College
+ COMP 2280 - MY0127 - NO - City University
+ COMP 2280 - HK0002 - NO - City University of Hong Kong
+ COMP 2280 - USC015 - NO - Claflin University
+ COMP 2280 - UOH044 - NO - Clark State Community College
+ COMP 2280 - UKS032 - NO - Cloud County Community College
+ COMP 2280 - CBC019 - NO - Coast Mountain College
+ COMP 2280 - PH0103 - NO - Colegio de San Juan de Letran
+ COMP 2280 - UIL029 - NO - College of Lake County
+ COMP 2280 - QA0009 - NO - College of N Atlantic - Qatar
+ COMP 2280 - CBC012 - NO - College of New Caledonia
+ COMP 2280 - UMN068 - NO - College of Saint Benedict
+ COMP 2280 - UNV008 - NO - College of Southern Nevada
+ COMP 2280 - UMN048 - NO - College of St Scholastica
+ COMP 2280 - SA0023 - NO - College of Tech at Riyadh
+ COMP 2280 - CNL005 - NO - College of the North Atlantic
+ COMP 2280 - CBC015 - NO - College of the Rockies
+ COMP 2280 - UTX035 - NO - Collin County Comm College
+ COMP 2280 - UCO026 - NO - Colorado Northwestern CC
+ COMP 2280 - CBC034 - NO - Columbia Bible College
+ COMP 2280 - CBC013 - NO - Columbia College (BC)
+ COMP 2280 - UCA008 - NO - Columbia College (CA)
+ COMP 2280 - UMN022 - NO - Concordia College
+ COMP 2280 - CQC003 - YES - Concordia University
+ COMP 2280 - UCA186 - NO - Concordia University
+ COMP 2280 - UMN043 - NO - Concordia University
+ COMP 2280 - CAB008 - NO - Concordia University Edmonton
+ COMP 2280 - UNE015 - NO - Concordia University Nebraska
+ COMP 2280 - CON027 - NO - Conestoga College
+ COMP 2280 - CON028 - NO - Confederation College
+ COMP 2280 - CBC030 - NO - Coquitlam College
+ COMP 2280 - UMI039 - NO - Cornerstone University
+ COMP 2280 - CBC047 - NO - Corpus Christi College
+ COMP 2280 - NG0025 - NO - Covenant University
+ COMP 2280 - CNB010 - NO - Crandall University
+ COMP 2280 - TR0006 - NO - Cyprus International Univ
+ COMP 2280 - CQC040 - NO - Cégep Institutions
+ COMP 2280 - CQC019 - NO - Cégep de Jonquière
+ COMP 2280 - CQC030 - NO - Cégep de Trois-Rivieres
+ COMP 2280 - UNY007 - NO - D'Youville College
+ COMP 2280 - IN0214 - NO - D.A.V. College Jalandhar
+ COMP 2280 - UND012 - NO - Dakota College at Bottineau
+ COMP 2280 - UMN042 - NO - Dakota County Tech College
+ COMP 2280 - CNS004 - NO - Dalhousie University
+ COMP 2280 - CN0320 - NO - Dalian Nationalities Univ
+ COMP 2280 - UA0083 - NO - Danylo Halytsky Lviv Nat Med U
+ COMP 2280 - UMI034 - NO - Davenport University
+ COMP 2280 - CQC014 - NO - Dawson College (Cégep)
+ COMP 2280 - UFL002 - NO - Daytona Beach Comm College
+ COMP 2280 - UCA075 - NO - De Anza College
+ COMP 2280 - PH0139 - NO - De La Salle Col of St Benilde
+ COMP 2280 - PH0085 - NO - De La Salle Lipa
+ COMP 2280 - PH0027 - NO - De La Salle University
+ COMP 2280 - AU0003 - NO - Deakin University
+ COMP 2280 - UIA013 - NO - Des Moines Area Comm College
+ COMP 2280 - CAB030 - NO - Devry Institute of Technology
+ COMP 2280 - UCA063 - NO - Diablo Valley College
+ COMP 2280 - UND009 - NO - Dickinson State University
+ COMP 2280 - UUT009 - NO - Dixie State University
+ COMP 2280 - RU0162 - NO - Dmitry Mendeleev U of Chem Tec
+ COMP 2280 - UKS021 - NO - Dodge City Communty College
+ COMP 2280 - JP0073 - NO - Dokkyo University
+ COMP 2280 - DM0001 - NO - Dominica State College
+ COMP 2280 - GH0020 - NO - Dominion University College
+ COMP 2280 - CBC014 - NO - Douglas College
+ COMP 2280 - UPA005 - NO - Drexel University
+ COMP 2280 - IE0015 - NO - Dundalk Inst of Technology
+ COMP 2280 - CON029 - NO - Durham College
+ COMP 2280 - EN0235 - NO - Durham University
+ COMP 2280 - UPA033 - NO - East Stroudsburg University
+ COMP 2280 - BD0004 - NO - East West University
+ COMP 2280 - VN0122 - NO - Eastern International Uni
+ COMP 2280 - CY0005 - NO - Eastern Mediterranean Univ
+ COMP 2280 - UWA020 - NO - Edmonds Community College
+ COMP 2280 - KE0001 - NO - Egerton University
+ COMP 2280 - NG0094 - NO - Ekiti State University
+ COMP 2280 - UTX073 - NO - El Centro College
+ COMP 2280 - NG0194 - NO - Elizade University
+ COMP 2280 - SD0010 - NO - Elrazi College of Med & Tec Sc
+ COMP 2280 - CBC027 - NO - Emily Carr Univ of Art+Design
+ COMP 2280 - NG0002 - NO - Enugu State Univ of Sc & Tech
+ COMP 2280 - DE0003 - NO - Fachhochschule Bielefeld
+ COMP 2280 - CON030 - NO - Fanshawe College
+ COMP 2280 - NG0067 - NO - Fed Polytechnic Nekede-Owerri
+ COMP 2280 - NG0050 - NO - Fed Univ Agriculture, Abeokuta
+ COMP 2280 - NG0082 - NO - Federal Polytechnic, Ede
+ COMP 2280 - NG0019 - NO - Federal Polytechnic, Ilaro
+STAT 1000 - CMB022 - NO
+ STAT 1000 - CMB022 - YES - Advanced Placement
+ STAT 1000 - CMB022 - YES - Advanced Placement
