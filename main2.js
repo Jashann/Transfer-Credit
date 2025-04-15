@@ -18,7 +18,7 @@ function extractUniversityOfferingName(htmlString) {
 }
 
 // New helper function to extract universities
-function extractUniversities(html) {
+function extractUniversities(html, province = "MB") {
   // Find the select element with id="p_selInstitution"
   const selectRegex = /<select[^>]*id="p_selInstitution"[^>]*>([\s\S]*?)<\/select>/i;
   const selectMatch = html.match(selectRegex);
@@ -33,7 +33,7 @@ function extractUniversities(html) {
   const universities = [];
   let match;
   while ((match = optionRegex.exec(selectContent)) !== null) {
-    universities.push(match[2]);  // Only push the name, not the code
+    universities.push(`${match[2]} (${province})`);  // Append the province code
   }
   
   return universities;
