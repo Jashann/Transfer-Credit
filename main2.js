@@ -33,10 +33,7 @@ function extractUniversities(html) {
   const universities = [];
   let match;
   while ((match = optionRegex.exec(selectContent)) !== null) {
-    universities.push({
-      code: match[1],
-      name: match[2]
-    });
+    universities.push(match[2]);  // Only push the name, not the code
   }
   
   return universities;
