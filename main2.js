@@ -18,7 +18,7 @@ function extractUniversityOfferingName(htmlString) {
 }
 
 // New helper function to extract universities
-function extractUniversities(html, province = "MB") {
+function extractUniversities(html, provinceCode = "MB") {
   // Find the select element with id="p_selInstitution"
   const selectRegex = /<select[^>]*id="p_selInstitution"[^>]*>([\s\S]*?)<\/select>/i;
   const selectMatch = html.match(selectRegex);
@@ -33,7 +33,7 @@ function extractUniversities(html, province = "MB") {
   const universities = [];
   let match;
   while ((match = optionRegex.exec(selectContent)) !== null) {
-    universities.push(`${match[2]} (${province})`);  // Append the province code
+    universities.push(`${match[2]} (${provinceCode})`);  // Append the province code
   }
   
   return universities;
@@ -67,7 +67,7 @@ const canadianProvinceCodes = [
   'YT'  // Yukon Territory
 ];
 
-function makeRequestToServer(data, courseName) {
+function makeRequestToServer(data, courseName, provinceCode) {
   return new Promise((resolve, reject) => {
     const options = {
       hostname: 'aurora.umanitoba.ca',
@@ -86,7 +86,7 @@ function makeRequestToServer(data, courseName) {
       });
       res.on('end', () => {
         // Extract universities from the HTML
-        const universities = extractUniversities(result);
+        const universities = extractUniversities(result, provinceCode);
         console.log("Universities found:", universities);
         resolve(universities);
       });
@@ -117,7 +117,7 @@ async function sendRequestWithRandomUserAgent(
   urlencoded.append('rpt_type', 'current');
   urlencoded.append('p_selProvState', provinceCode);
 
-  await makeRequestToServer(urlencoded, courseCode);
+  await makeRequestToServer(urlencoded, courseCode, provinceCode);
 }
 
 async function readAndPrintLines(fileName, department="STAT", courseCode="STAT 2000") {
