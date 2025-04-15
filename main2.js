@@ -17,6 +17,30 @@ function extractUniversityOfferingName(htmlString) {
   }
 }
 
+// New helper function to extract universities
+function extractUniversities(html) {
+  // Find the select element with id="p_selInstitution"
+  const selectRegex = /<select[^>]*id="p_selInstitution"[^>]*>([\s\S]*?)<\/select>/i;
+  const selectMatch = html.match(selectRegex);
+  
+  if (!selectMatch) {
+    return [];
+  }
+  
+  const selectContent = selectMatch[1];
+  const optionRegex = /<OPTION VALUE="([^"]*)">([^<]*)<\/OPTION>/g;
+  
+  const universities = [];
+  let match;
+  while ((match = optionRegex.exec(selectContent)) !== null) {
+    universities.push({
+      code: match[1],
+      name: match[2]
+    });
+  }
+  
+  return universities;
+}
 
 function getRandomUserAgent() {
   const userAgents = [
@@ -47,13 +71,20 @@ function makeRequestToServer(data, courseName) {
         result += chunk;
       });
       res.on('end', () => {
-        console.log(result);
+        // Extract universities from the HTML
+        const universities = extractUniversities(result);
+        console.log("Universities found:", universities);
+        resolve(universities);
       });
     });
     req.on('error', (error) => {
       console.log('Error with request:', error.message);
       console.log('Retrying in 5 seconds...');
-      setTimeout(makeRequestToServer, 5000, data, courseName);
+      setTimeout(() => {
+        makeRequestToServer(data, courseName)
+          .then(resolve)
+          .catch(reject);
+      }, 5000);
     });
 
     req.write(data.toString());
