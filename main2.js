@@ -50,6 +50,23 @@ function getRandomUserAgent() {
   return userAgents[randomInt(userAgents.length)];
 }
 
+// Canadian province/territory codes
+const canadianProvinceCodes = [
+  'MB', // Manitoba
+  'AB', // Alberta
+  'BC', // British Columbia
+  'NB', // New Brunswick
+  'NL', // Newfoundland and Labrador
+  'NT', // Northwest Territories
+  'NS', // Nova Scotia
+  'NU', // Nunavut
+  'ON', // Ontario
+  'PE', // Prince Edward Island
+  'QC', // Quebec
+  'SK', // Saskatchewan
+  'YT'  // Yukon Territory
+];
+
 function makeRequestToServer(data, courseName) {
   return new Promise((resolve, reject) => {
     const options = {
@@ -92,13 +109,13 @@ function makeRequestToServer(data, courseName) {
 async function sendRequestWithRandomUserAgent(
   universityCode,
   department,
-  courseCode
+  courseCode,
+  provinceCode = 'MB'
 ) {
-  console.log(`REQUEST for [${courseCode} - ${universityCode}]`);
 
   const urlencoded = new URLSearchParams();
   urlencoded.append('rpt_type', 'current');
-  urlencoded.append('p_selProvState', 'MB');
+  urlencoded.append('p_selProvState', provinceCode);
 
   await makeRequestToServer(urlencoded, courseCode);
 }
@@ -118,5 +135,20 @@ async function readAndPrintLines(fileName, department="STAT", courseCode="STAT 2
   rl.close();
 }
 
-// readAndPrintLines('universityCodes.txt', 'COMP', 'COMP 2280');
-sendRequestWithRandomUserAgent('CMB022', 'STAT', 'STAT 2000');
+// Function to search all Canadian provinces
+async function searchAllProvinces(department="STAT", courseCode="STAT 2000") {
+  console.log(`Searching all Canadian provinces for ${courseCode}`);
+  
+  for (const provinceCode of canadianProvinceCodes) {
+    console.log(`Searching province: ${provinceCode}`);
+    await sendRequestWithRandomUserAgent('', department, courseCode, provinceCode);
+  }
+  
+  console.log('Finished searching all provinces.');
+}
+
+// Comment out the single province search
+// sendRequestWithRandomUserAgent('CMB022', 'STAT', 'STAT 2000');
+
+// Search all provinces
+searchAllProvinces('STAT', 'STAT 2000');
