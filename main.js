@@ -111,5 +111,5 @@ async function readAndPrintLines(fileName, department="STAT", courseCode="STAT 2
   rl.close();
 }
 
-// readAndPrintLines('universityCodes.txt', 'COMP', 'COMP 2280');
-sendRequestWithRandomUserAgent('CMB022', 'STAT', 'STAT 1000');
+readAndPrintLines('universityCodes.txt', 'COMP', 'COMP 2280');
+// sendRequestWithRandomUserAgent('CMB022', 'STAT', 'STAT 2000');
